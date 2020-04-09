@@ -14,6 +14,10 @@
 		3D523C92243DA279005F3AA6 /* StamuraiTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D523C90243DA279005F3AA6 /* StamuraiTask.xcdatamodeld */; };
 		3D523C94243DA27B005F3AA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D523C93243DA27B005F3AA6 /* Assets.xcassets */; };
 		3D523C97243DA27B005F3AA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D523C95243DA27B005F3AA6 /* LaunchScreen.storyboard */; };
+		3D523C9F243DD88D005F3AA6 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D523C9E243DD88D005F3AA6 /* RatingViewController.swift */; };
+		3D523CA3243E38A7005F3AA6 /* PastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D523CA2243E38A7005F3AA6 /* PastViewController.swift */; };
+		3DD89A49243EBCD500092D0C /* RatingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD89A47243EBCD500092D0C /* RatingViewCell.swift */; };
+		3DD89A4A243EBCD500092D0C /* RatingViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD89A48243EBCD500092D0C /* RatingViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		3D523C93243DA27B005F3AA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D523C96243DA27B005F3AA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D523C98243DA27B005F3AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D523C9E243DD88D005F3AA6 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		3D523CA2243E38A7005F3AA6 /* PastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastViewController.swift; sourceTree = "<group>"; };
+		3DD89A47243EBCD500092D0C /* RatingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewCell.swift; sourceTree = "<group>"; };
+		3DD89A48243EBCD500092D0C /* RatingViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +68,42 @@
 			children = (
 				3D523C87243DA279005F3AA6 /* AppDelegate.swift */,
 				3D523C89243DA279005F3AA6 /* SceneDelegate.swift */,
-				3D523C8B243DA279005F3AA6 /* ViewController.swift */,
-				3D523C8D243DA279005F3AA6 /* Main.storyboard */,
+				3D523CA6243E3CA5005F3AA6 /* Model */,
+				3D523CA0243E0D64005F3AA6 /* Views */,
+				3D523CA1243E387C005F3AA6 /* Controllers */,
 				3D523C93243DA27B005F3AA6 /* Assets.xcassets */,
 				3D523C95243DA27B005F3AA6 /* LaunchScreen.storyboard */,
 				3D523C98243DA27B005F3AA6 /* Info.plist */,
-				3D523C90243DA279005F3AA6 /* StamuraiTask.xcdatamodeld */,
 			);
 			path = StamuraiTask;
+			sourceTree = "<group>";
+		};
+		3D523CA0243E0D64005F3AA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D523C8D243DA279005F3AA6 /* Main.storyboard */,
+				3DD89A47243EBCD500092D0C /* RatingViewCell.swift */,
+				3DD89A48243EBCD500092D0C /* RatingViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D523CA1243E387C005F3AA6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D523C8B243DA279005F3AA6 /* ViewController.swift */,
+				3D523C9E243DD88D005F3AA6 /* RatingViewController.swift */,
+				3D523CA2243E38A7005F3AA6 /* PastViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3D523CA6243E3CA5005F3AA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D523C90243DA279005F3AA6 /* StamuraiTask.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +167,7 @@
 				3D523C97243DA27B005F3AA6 /* LaunchScreen.storyboard in Resources */,
 				3D523C94243DA27B005F3AA6 /* Assets.xcassets in Resources */,
 				3D523C8F243DA279005F3AA6 /* Main.storyboard in Resources */,
+				3DD89A4A243EBCD500092D0C /* RatingViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D523C8C243DA279005F3AA6 /* ViewController.swift in Sources */,
+				3D523C9F243DD88D005F3AA6 /* RatingViewController.swift in Sources */,
 				3D523C88243DA279005F3AA6 /* AppDelegate.swift in Sources */,
 				3D523C92243DA279005F3AA6 /* StamuraiTask.xcdatamodeld in Sources */,
+				3D523CA3243E38A7005F3AA6 /* PastViewController.swift in Sources */,
 				3D523C8A243DA279005F3AA6 /* SceneDelegate.swift in Sources */,
+				3DD89A49243EBCD500092D0C /* RatingViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
